@@ -10,7 +10,7 @@ namespace ServiceBusMonitorFunction.Repositories
     public class ElasticQueueDetailsRepository
     {
         private static ElasticClient _elasticClient;
-        private const string Index = "happyatwork-queue";
+        private const string Index = "example-queue";
 
         public ElasticQueueDetailsRepository(ElasticClient client)
         {

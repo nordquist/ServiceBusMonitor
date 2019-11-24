@@ -106,7 +106,7 @@ namespace ServiceBusMonitorFunction.Services
                      TemplateId = templateId,
                      TemplateModel = new Dictionary<string, string>
                      { 
-                         { "title", $"Happy at Work - {alert.Header} - [internal]" },
+                         { "title", $"Example - {alert.Header} - [internal]" },
                          { "header", $"{alert.Header}" },
                          { "message", $"{alert.Message}" }
                      },
