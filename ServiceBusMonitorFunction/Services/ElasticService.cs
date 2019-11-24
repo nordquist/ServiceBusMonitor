@@ -12,9 +12,9 @@ namespace ServiceBusMonitorFunction.Services
     public class ElasticService : IElasticService
     {
         private static ElasticClient _elasticClient;
-        private IElasticQueueDetailsRepository _elasticQueueDetailsRepository;
+        private ElasticQueueDetailsRepository _elasticQueueDetailsRepository;
 
-        public IElasticQueueDetailsRepository ElasticQueueDetailsRepository => _elasticQueueDetailsRepository ??= new ElasticQueueDetailsRepository(_elasticClient);
+        public ElasticQueueDetailsRepository ElasticQueueDetailsRepository => _elasticQueueDetailsRepository ??= new ElasticQueueDetailsRepository(_elasticClient);
 
         public ElasticService(string connectionString)
         {

@@ -30,6 +30,7 @@ namespace ServiceBusMonitorFunction
             Console.WriteLine($"Elastic connection: {elasticConnectionString}");
             services.AddScoped<IElasticService, ElasticService>(sp => new ElasticService(elasticConnectionString));
             services.AddScoped<IAlertsService, AlertsService>();
+            services.AddScoped<IMailQueueClient, MailQueueClient>();
             services.AddSingleton<IConfiguration>(config);
         }
     }

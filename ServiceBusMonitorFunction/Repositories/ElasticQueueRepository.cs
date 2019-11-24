@@ -7,7 +7,7 @@ using ServiceBusMonitorFunction.Services.Interfaces;
 
 namespace ServiceBusMonitorFunction.Repositories
 {
-    public class ElasticQueueDetailsRepository : IElasticQueueDetailsRepository
+    public class ElasticQueueDetailsRepository
     {
         private static ElasticClient _elasticClient;
         private const string Index = "happyatwork-queue";
