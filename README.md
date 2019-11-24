@@ -81,7 +81,7 @@ A simple Azure Function running every five minutes to monitor Azure Service Bus 
   },
   {
     "name": "ServiceBusConnection",
-    "value": "Endpoint=sb://my-servicebux.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey={key}",
+    "value": "Endpoint=sb://my-servicebus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey={key}",
     "slotSetting": false
   },
   {
